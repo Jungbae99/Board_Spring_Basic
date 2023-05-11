@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<context>
+	<Resource auth = "Container"
+		name = "jdbc/oracle"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		type="javax.sql.DataSource"
+		url ="jdbc:oracle:thin:@localhost:1521:xe"
+		username="C##SPRINGUSER"
+		password="spring123"
+		loginTimeout="10"
+		maxActive="50" 
+		maxIdle="20"
+		maxWait="2000"
+		testOnBorrow="true" />		
+</context>
+
