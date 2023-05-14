@@ -74,6 +74,9 @@ public class BoardController extends HttpServlet {
 				command = new DeleteCommand();
 				viewPage = command.execute(request, response);
 			
+		}else if(result.equals("/listReverse.do")) {
+			command = new ListReverse();
+			viewPage = command.execute(request, response);
 		}
 		
 		RequestDispatcher dispatcher;

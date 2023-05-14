@@ -18,10 +18,10 @@ public class DeleteCommand implements Command {
 		
 		if(result ==1) {
 			msg="글이삭제되었습니다";
-			url = "JSP_MVC/list.do";
+			url = "/JSP_MVC/list.do";
 		}else {
 			msg=" 글이 삭제되지 않았습니다";
-			url = "JSP_MVC/list.do";
+			url = "/JSP_MVC/list.do";
 		}
 		request.setAttribute("url", url);
 		request.setAttribute("msg", msg);
